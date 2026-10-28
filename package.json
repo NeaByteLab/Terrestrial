@@ -1,0 +1,73 @@
+{
+  "name": "@neabyte/terrestrial",
+  "description": "Finds geodesic distances between places on Earth",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild --minify",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "keywords": [
+    "coordinates",
+    "distance",
+    "earth",
+    "ellipsoid",
+    "geodesic",
+    "geodesy",
+    "geography",
+    "geospatial",
+    "latitude",
+    "location",
+    "longitude",
+    "mapping",
+    "measurement",
+    "navigation",
+    "nearest",
+    "places",
+    "ranking",
+    "spatial",
+    "vincenty",
+    "wgs84"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript/typescript6": "^6.0.2",
+    "unbuild": "^3.6.1"
+  },
+  "author": {
+    "name": "NeaByteLab",
+    "email": "me@neabyte.com",
+    "url": "https://github.com/NeaByteLab"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeaByteLab/Terrestrial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeaByteLab/Terrestrial/issues"
+  },
+  "homepage": "https://github.com/NeaByteLab/Terrestrial#readme",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
